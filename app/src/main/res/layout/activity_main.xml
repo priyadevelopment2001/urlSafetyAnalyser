@@ -14,6 +14,7 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        app:title="URL Safety Analyser"
+       app:titleTextColor="@color/black"
        android:background="@color/toolbarColor"/>
 
  <ScrollView
@@ -27,10 +28,16 @@
       android:layout_marginHorizontal="20dp"
       android:layout_height="match_parent">
 
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:layout_marginTop="15dp"
+          android:orientation="horizontal">
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
-
+        android:layout_weight="1"
         android:layout_height="wrap_content">
 
     <com.google.android.material.textfield.TextInputEditText
@@ -41,6 +48,15 @@
         android:hint="Enter your url here..."/>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+          <ImageView
+              android:id="@+id/clearImageButton"
+              android:layout_width="40dp"
+              android:layout_marginStart="5dp"
+              android:src="@drawable/delete"
+              android:layout_height="40dp"/>
+
+      </LinearLayout>
 
  <TextView
      android:id="@+id/errorTextView"
@@ -59,20 +75,34 @@
         android:layout_marginTop="10dp"
         android:text="submit"/>
 
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/lineColor"/>
+
 
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="match_parent"
         android:layout_height="36dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
         android:hint="Result will be shown here" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/lineColor"/>
 
       <TextView
           android:id="@+id/urlPreviewTextView"
           android:layout_width="match_parent"
           android:textSize="16sp"
           android:visibility="gone"
-          android:layout_marginTop="15dp"
+          android:layout_marginTop="5dp"
           android:layout_height="wrap_content"
           android:text="URL Preview"/>
 
@@ -82,7 +112,7 @@
           android:visibility="gone"
           android:layout_marginTop="5dp"
           android:src="@drawable/preview"
-          android:layout_height="400dp"
+          android:layout_height="600dp"
           />
   </LinearLayout>
 
