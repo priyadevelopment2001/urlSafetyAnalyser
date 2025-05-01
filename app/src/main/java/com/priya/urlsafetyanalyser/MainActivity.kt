@@ -12,11 +12,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import shivam.sycodes.securepeek.databinding.ActivityMainBinding
-import shivam.sycodes.securepeek.metadata.URLMetadataFetcher
-import shivam.sycodes.securepeek.network.SafeBrowsingService
-import shivam.sycodes.securepeek.utils.Info
-import shivam.sycodes.securepeek.utils.WebViewScreenshotService
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
