@@ -1,4 +1,3 @@
-package shivam.sycodes.securepeek.utils
 
 import android.app.Activity
 import android.content.Context
