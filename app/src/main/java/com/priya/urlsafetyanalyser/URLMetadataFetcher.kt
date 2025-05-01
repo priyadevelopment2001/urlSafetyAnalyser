@@ -1,4 +1,3 @@
-package shivam.sycodes.securepeek.metadata
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
