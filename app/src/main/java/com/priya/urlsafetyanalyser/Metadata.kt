@@ -1,4 +1,3 @@
-package shivam.sycodes.securepeek.model
 
 import android.graphics.Bitmap
 
