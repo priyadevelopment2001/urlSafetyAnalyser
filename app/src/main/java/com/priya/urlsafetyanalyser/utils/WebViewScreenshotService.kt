@@ -11,7 +11,7 @@ import android.widget.FrameLayout
 
 object WebViewScreenshotService {
 
-    fun loadUrlInBackground(
+    /*fun loadUrlInBackground(
         context: Context,
         url: String,
         onScreenshotCaptured: (Bitmap?) -> Unit
@@ -82,5 +82,5 @@ object WebViewScreenshotService {
             e.printStackTrace()
             null
         }
-    }
+    }*/
 }
